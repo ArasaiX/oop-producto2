@@ -14,13 +14,15 @@ public class Ingresos {
     private String Nombre;
 	private String Tipo;
 	private float Cantidad;
+	private int ID;
 	
 	
-	public Ingresos(String nombre, String tipo, float cantidad) {
+	public Ingresos(String nombre, String tipo, float cantidad, int id) {
 		super();
 		Nombre = nombre;
 		Tipo = tipo;
 		Cantidad = cantidad;
+		ID = id;
 	}
 	
 	public String getNombre() {
@@ -40,6 +42,13 @@ public class Ingresos {
 	}
 	public void setCantidad(float cantidad) {
 		Cantidad = cantidad;
+	}
+
+    public int getID() {
+        return ID;
+    }
+	public void setID(int id) {
+		ID = id;
 	}
         
 }

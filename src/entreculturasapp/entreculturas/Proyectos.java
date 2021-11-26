@@ -21,7 +21,7 @@ public class Proyectos<T> {
 	private Date fechaFin;
 	private String socioLocal;
 	private String Financiador;
-	private int codigo;
+	private int ID;
 	private String acciones;
 	private ArrayList<T> personalContratado;
 	private ArrayList<T> personalVoluntario;
@@ -29,7 +29,7 @@ public class Proyectos<T> {
 	
 	
 	public Proyectos(String pais, String localizacion, Date fechaInicio, Date fechaFin, String socioLocal,
-			String financiador, int codigo, String acciones, ArrayList<T> personalContratado,
+			String financiador, int ID, String acciones, ArrayList<T> personalContratado,
 			ArrayList<T> personalVoluntario) {
 		super();
 		this.pais = pais;
@@ -38,7 +38,7 @@ public class Proyectos<T> {
 		this.fechaFin = fechaFin;
 		this.socioLocal = socioLocal;
 		Financiador = financiador;
-		this.codigo = codigo;
+		this.ID = ID;
 		this.acciones = acciones;
 		this.personalContratado = personalContratado;
 		this.personalVoluntario = personalVoluntario;
@@ -82,12 +82,6 @@ public class Proyectos<T> {
 	public void setFinanciador(String financiador) {
 		Financiador = financiador;
 	}
-	public int getCodigo() {
-		return codigo;
-	}
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
 	public String getAcciones() {
 		return acciones;
 	}
@@ -106,8 +100,16 @@ public class Proyectos<T> {
 	public void setPersonalVoluntario(ArrayList<T> personalVoluntario) {
 		this.personalVoluntario = personalVoluntario;
 	}
-	
-	
-	
+
+
+
+    public int getID() {
+        return 0;
+    }
+
+	public void setID() {
+		this.ID = ID;
+	}
+
 
 }
